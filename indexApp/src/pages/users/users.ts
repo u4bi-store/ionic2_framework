@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 import { User } from '../../models/user'; /* 모델 임포트*/
 import { GithubUsers } from '../../providers/github-users'; /* 정의된 프로바이더 임포트 */
 
+import { UserDetailsPage } from '../user-details/user-details'; /* 유저디테일 임포트*/
+
 @Component({
   selector: 'page-users',
   templateUrl: 'users.html'
@@ -17,6 +19,10 @@ export class UsersPage {
       /* @ 결과 Array[30] 개 넘어옴 */
       this.users = users;
     })
+  }
+  
+  goToDetails(login: string){
+    this.navCtrl.push(UserDetailsPage, {login}); /* 매개로 받고 푸쉬함*/
   }
 
   ionViewDidLoad() {

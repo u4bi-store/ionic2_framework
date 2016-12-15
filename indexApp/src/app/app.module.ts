@@ -13,6 +13,7 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
 
 import { GithubUsers } from '../providers/github-users'; /* 정의된 프로바이더 임포트*/
 
+import {UserDetailsPage } from '../pages/user-details/user-details'; /* 유저 디테일 임포트*/
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +23,8 @@ import { GithubUsers } from '../providers/github-users'; /* 정의된 프로바�
     TabsPage,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,7 +38,8 @@ import { GithubUsers } from '../providers/github-users'; /* 정의된 프로바�
     TabsPage,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, GithubUsers] 
   /* 임포트한 githubusers를 프로바이더스에 에드함 */
