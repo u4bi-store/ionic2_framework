@@ -6,13 +6,21 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { UsersPage } from '../pages/users/users';
+import { ReposPage } from '../pages/repos/repos';
+import { OrganisationsPage } from '../pages/organisations/organisations';
+/* 페이지 임포트함*/
+
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UsersPage,
+    ReposPage,
+    OrganisationsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +31,10 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UsersPage,
+    ReposPage,
+    OrganisationsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

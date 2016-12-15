@@ -15,7 +15,7 @@ export class OrganisationsPage {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
+  ionViewDidLoad() { /* 아이오닉 라이프 사이클 고리임 */
     console.log('Hello OrganisationsPage Page');
   }
 
