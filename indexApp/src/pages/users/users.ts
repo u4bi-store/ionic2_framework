@@ -15,6 +15,7 @@ export class UsersPage {
     githubUsers.load().subscribe(users => { /* 로드해서 반환되는 값을 users에 주입*/
       console.log(users); /* users 어레이 콘솔 테스트*/
       /* @ 결과 Array[30] 개 넘어옴 */
+      this.users = users;
     })
   }
 

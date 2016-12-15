@@ -14,5 +14,13 @@
 
 
 <ion-content padding> <!-- 페이지 뷰내용 padding이 붙어 약간의 패딩 간격줌 -->
-  <h3> u4bi Users view page</h3>
+  <ion-list> <!-- 리스트 렌더링함 -->
+    <button ion-item *ngFor="let user of users"> <!-- 버튼 태그에 포문줌-->
+      <ion-avatar item-left> <!-- 아바타 태그인데 원형 이미지 생성하는 구성 요소라함.-->
+        <img [src]="user.avatar_url"> <!-- 이미지 지정-->
+      </ion-avatar>
+      <h2>{{user.login}}</h2>
+      <ion-icon name="arrow-forward" item-right></ion-icon> <!-- 아이콘로드 화살표 아이콘지정 이 아이콘 오른쪽-->
+    </button>
+  </ion-list>
 </ion-content>
