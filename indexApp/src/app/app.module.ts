@@ -11,6 +11,8 @@ import { ReposPage } from '../pages/repos/repos';
 import { OrganisationsPage } from '../pages/organisations/organisations';
 /* 페이지 임포트함*/
 
+import { GithubUsers } from '../providers/github-users'; /* 정의된 프로바이더 임포트*/
+
 @NgModule({
   declarations: [
     MyApp,
@@ -36,6 +38,7 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
     ReposPage,
     OrganisationsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, GithubUsers] 
+  /* 임포트한 githubusers를 프로바이더스에 에드함 */
 })
 export class AppModule {}
