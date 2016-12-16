@@ -7,6 +7,24 @@
 </ion-header>
 
 
-<ion-content padding>
-  <h3>User Details view page</h3>
+<ion-content padding> <!--콘텐트 내용 들어감-->
+  <ion-list> <!-- 리스트를 만들고 -->
+    <ion-item> <!--아이템 덩어리에-->
+      <ion-label>Followers</ion-label> <!--라벨과-->
+      <ion-badge item-right>{{user?.followers}}</ion-badge> <!-- 벳지를 오른쪽 정렬하며 붙힘-->
+    </ion-item>
+    <ion-item> <!--아이템 덩어리에-->
+      <ion-label>Following</ion-label> <!--라벨과-->
+      <ion-badge item-right>{{user?.following}}</ion-badge> <!-- 벳지를 오른쪽 정렬하며 붙힘-->
+    </ion-item>
+    <ion-item> <!--아이템 덩어리에-->
+      <ion-label>Repos</ion-label> <!--라벨과-->
+      <ion-badge item-right>{{user?.public_repos}}</ion-badge> <!-- 벳지를 오른쪽 정렬하며 붙힘-->
+    </ion-item>
+    <ion-item> <!--아이템 덩어리에-->
+      <ion-label>Gists</ion-label> <!--라벨과-->
+      <ion-badge item-right>{{user?.public_gists}}</ion-badge> <!-- 벳지를 오른쪽 정렬하며 붙힘-->
+    </ion-item>
+    
+  </ion-list>
 </ion-content>

@@ -24,7 +24,7 @@ import {UserDetailsPage } from '../pages/user-details/user-details'; /* 유저 �
     UsersPage,
     ReposPage,
     OrganisationsPage,
-    UserDetailsPage
+    UserDetailsPage /* 추가함*/
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,7 +39,7 @@ import {UserDetailsPage } from '../pages/user-details/user-details'; /* 유저 �
     UsersPage,
     ReposPage,
     OrganisationsPage,
-    UserDetailsPage
+    UserDetailsPage /* 추가함*/
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, GithubUsers] 
   /* 임포트한 githubusers를 프로바이더스에 에드함 */

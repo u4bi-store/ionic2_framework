@@ -20,4 +20,9 @@ export class GithubUsers {
     return this.http.get(`${this.githubApiUrl}/users`)
     .map(res => <User[]> res.json()); /* user모델에 맞게 담아 반환함*/
   }
+    
+  loadDetails(login: string): Observable<User>{ /* 디테일 데이터*/
+    return this.http.get(`${this.githubApiUrl}/users/${login}`)
+    .map(res => <User>(res.json()))
+  }
 }
