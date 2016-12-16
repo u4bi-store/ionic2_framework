@@ -12,8 +12,8 @@
 
 </ion-header>
 
-
 <ion-content padding> <!-- 페이지 뷰내용 padding이 붙어 약간의 패딩 간격줌 -->
+  <ion-searchbar></ion-searchbar> <!-- 검색란 추가-->
   <ion-list> <!-- 리스트 렌더링함 -->
     <button ion-item *ngFor="let user of users" (click)="goToDetails(user.login)"> <!--클릭 이벤트 핸들러 준 후 인자로 login원소 넘김-->
       <!-- 버튼 태그에 포문줌-->

@@ -19,6 +19,10 @@ export class UsersPage {
       /* @ 결과 Array[30] 개 넘어옴 */
       this.users = users; /* users 데이터주입함 */
     })
+
+    githubUsers.searchUsers('scotch').subscribe(users => {
+      console.log('서치 : ' + users); /* 콘솔 찍어봄*/
+    });
   }
   
   goToDetails(login: string){
