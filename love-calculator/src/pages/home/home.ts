@@ -9,4 +9,8 @@ import { NavController } from 'ionic-angular';
 export class HomePage { /* 홈페이지 클래스*/
   name1 = ''; /* name 1, 2 초기화*/
   name2 = '';
+  
+  get score() {
+    return 77;
+  }
 }
