@@ -7,6 +7,6 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html' /* 템플릿 url 지정*/
 })
 export class HomePage { /* 홈페이지 클래스*/
-  name1 = '';
+  name1 = ''; /* name 1, 2 초기화*/
   name2 = '';
 }
