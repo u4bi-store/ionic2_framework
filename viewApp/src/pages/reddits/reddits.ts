@@ -10,6 +10,7 @@ import {DetailsPage} from '../details/details';
 })
 export class RedditsPage {
   items: any;
+
   constructor(public navCtrl: NavController, private redditService:RedditService) {
 
   }
@@ -30,6 +31,10 @@ export class RedditsPage {
     this.navCtrl.push(DetailsPage,{
       item:item
     });
+  }
+
+  changeCategori(){
+    
   }
 
 }
