@@ -10,6 +10,7 @@
     <ion-list>
       <ion-item>
         <ion-label fixed>Category</ion-label>
+        
         <ion-select (ionChange)="changeCategory()" [(ngModel)]="category" name="category">
           <ion-option value="sports">Sports</ion-option>
           <ion-option value="food">Food</ion-option>
