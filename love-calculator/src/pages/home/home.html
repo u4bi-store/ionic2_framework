@@ -20,7 +20,9 @@
 
   <ion-card text-center> <!-- 카드 태그 선언 text-center로 텍스트 가운데 정렬-->
     <ion-card-header> <!-- 카드 헤더 선언 -->
-      {{ name1 || '???' }} and {{ name2 || '???'}} <!-- || ??? 필터선언-->
+      {{ name1 || '???' }}
+      <ion-icon name="heart" color="danger"></ion-icon>
+      {{ name2 || '???'}} <!-- || ??? 필터선언-->
     </ion-card-header>
     <ion-card-content class="score"> <!-- 카드 콘텐트 선언-->
       {{ score }}%
