@@ -7,5 +7,34 @@
 </ion-header>
 
 <ion-content padding>
-    이곳은 셋팅임
+  <form (submit)="setDefaults()">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Category</ion-label>
+        <ion-select [(ngModel)]="category" name="category">
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label fixed>Limit</ion-label>
+        <ion-select [(ngModel)]="category" name="category">
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+          <ion-option value=""></ion-option>
+        </ion-select>
+      </ion-item>
+      <button ion-button type="submit" block>Save Changes</button>
+    </ion-list>
+  </form>
 </ion-content>
