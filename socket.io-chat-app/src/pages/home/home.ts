@@ -25,5 +25,13 @@ export class HomePage {
       });
     });
   }
-
+  
+  chatSend(v){
+    let data = {
+      message: v.chatText,
+      username: this.username
+    }
+    this.socket.emit('new message', data);
+    this.chat = '';
+  }
 }
