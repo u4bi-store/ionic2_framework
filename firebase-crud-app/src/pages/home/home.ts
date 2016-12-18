@@ -77,5 +77,39 @@ export class HomePage {
     
     actionSheet.present(); /* 위에 객체로 정의된거 표출함*/
   }
+  
+  removeSong(songId: string){ /* 삭제*/
+    this.songs.remove(songId);
+  }
 
+  updateSong(songId, songTitle){ /* 수정*/
+    let prompt = this.alertCtrl.create({ /* 얼럿 생성함 객체형식으로 속성정의*/
+      title: '노래제목',
+      message: "수정할 내용을 적어주세요.",
+      inputs: [
+        {
+          name: 'title',
+          placeholder: '노래제목',
+          value: songTitle
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('클릭 취소함');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            this.songs.update(songId, {
+              title: data.title
+            });
+          }
+        }
+      ]
+    });
+    prompt.present(); /* 위에 객체로 정의된거 표출함*/
+  }
 }
