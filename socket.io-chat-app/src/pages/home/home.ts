@@ -16,7 +16,14 @@ export class HomePage {
   zone:any;
   
   constructor(public navCtrl: NavController) {
-
+    this.socket = io.connent(this.socketHost);
+    this.zone = new NgZone({enableLongStackTrace:false});
+    this.socket.on("chat message", (msg) =>{
+      this.zone.run(() =>{
+        this.messages.push(msg);
+        this.content.scrollToBottom();
+      });
+    });
   }
 
 }
