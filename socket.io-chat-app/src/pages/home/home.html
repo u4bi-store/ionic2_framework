@@ -29,3 +29,17 @@
     </div>
   </ion-list>
 </ion-content>
+<ion-footer> 
+  <form #f="ngForm">
+    <ion-grid>
+      <ion-low>
+        <ion-col width-80>
+          <ion-input [(ngModel)]="chat" name="chatText" required placeholder="내용을 입력해주세요."></ion-input>
+        </ion-col>
+        <ion-col width-20 center>
+          <button (click)="chatSend(f.value, f.valid)" ion-button color="light" full [disbled]="f.valid === true">보내기</button>
+        </ion-col>
+      </ion-low>
+    </ion-grid>
+  </form>
+</ion-footer>
