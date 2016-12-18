@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <ion-input [(ngModel)] = "username" placeholder="닉네임설정" ></ion-input>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <div *ngFor="let data of messages">
+      <ion-item>
+        <p class="chat-text" item-left>
+          <strong>{{data.username}} : </strong>
+        </p>
+        <p class="chat-time" item-right>
+          {{data.date | date: 'dd/MM/yyyy'}}
+        </p>
+      </ion-item>
+    </div>
+  </ion-list>
 </ion-content>
