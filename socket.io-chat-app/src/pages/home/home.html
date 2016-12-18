@@ -37,7 +37,7 @@
           <ion-input [(ngModel)]="chat" name="chatText" required placeholder="내용을 입력해주세요."></ion-input>
         </ion-col>
         <ion-col width-20 center>
-          <button (click)="chatSend(f.value, f.valid)" ion-button color="light" full [disbled]="f.valid === true">보내기</button>
+          <button (click)="chatSend(f.value, f.valid)" ion-button color="light" full [disbled]="f.valid === false">보내기</button>
         </ion-col>
       </ion-low>
     </ion-grid>
