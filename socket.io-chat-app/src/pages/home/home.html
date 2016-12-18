@@ -9,7 +9,16 @@
 <ion-content padding>
   <ion-list>
     <div *ngFor="let data of messages">
-      <ion-item>
+      <ion-item *ngIf="username === data.username" style="border-right: solid 5px red;">
+        <p class="chat-text" item-left>
+          <strong>{{data.username}} : </strong>
+        </p>
+        <p class="chat-time" item-right>
+          {{data.date | date: 'dd/MM/yyyy'}}
+        </p>
+      </ion-item>
+      
+      <ion-item *ngIf="username !== data.username" style="border-right: solid 5px green;">
         <p class="chat-text" item-left>
           <strong>{{data.username}} : </strong>
         </p>
