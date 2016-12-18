@@ -13,7 +13,11 @@
 <ion-content padding>
   <ion-list> <!-- 리스트 영역만듬 -->
     <ion-item *ngFor="let song of songs | async"> <!-- 아이템 태그 포문 돌림 async 속성으로-->
-      {{song.title}} <!-- 바인딩된 데이터 보임-->
+      <p>{{song.title}} <!-- 바인딩된 데이터 보임-->
+      <button ion-button icon-only (click)="showOptions(index, song.title)" end> <!-- 우측에 정렬 수정 클릭시 showOptions 옵션 진행-->
+      <ion-icon name="appstore"></ion-icon> <!-- 버튼내 아이콘 지정-->
+      </button>
+      </p>
     </ion-item>
   </ion-list>
   
