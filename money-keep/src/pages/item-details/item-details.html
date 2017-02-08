@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>상세내역보기</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3 text-center *ngIf="selectedItem">
+    {{selectedItem.title}}
+    <ion-icon [name]="selectedItem.icon"></ion-icon>
+  </h3>
+  <h4 *ngIf="selectedItem">
+    당신이 받은 팁 내역 <b>{{selectedItem.title}}</b>
+    <p>받은 시간</p>
+    <p>상세 내용 : 파란 자켓 안경쓴 아저씨</p>
+  </h4>
+</ion-content>
