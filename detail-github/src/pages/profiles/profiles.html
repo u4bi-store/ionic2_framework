@@ -28,11 +28,39 @@
     </form>
     <button ion-button clear small (click)="reset()">리셋</button>
   </ion-card>
-  <ion-card>
 
-  </ion-card>
-  <ion-card>
+  <ion-card *ngIf="profiles">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{profiles.avatar_url}}">
+      </ion-avatar>
+      <h2>{{profiles.name}}</h2>
+      <p>{{profiles.location}}</p>
+    </ion-item>
 
+    <ion-card-content>
+      <p>{{profiles.bio}}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="person"></ion-icon>
+          <div>{{profiles.followers}} 팔로워</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="git-branch"></ion-icon>
+          <div>{{profiles.public_repos}} 공개 레포지토리</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <ion-note>
+          {{profiles.email}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
   </ion-card>
+  <ion-card></ion-card>
 
 </ion-content>
