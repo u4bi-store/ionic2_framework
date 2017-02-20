@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { GithubService } from '../../providers/github-service';
 
 /*
   Generated class for the Profiles page.
@@ -13,10 +14,35 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ProfilesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+   profiles: any;
+   repos: any;
+   github_user = "";
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private GithubService : GithubService){}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilesPage');
+    console.log('ProfilesPage 페이지 로드');
+  }
+
+  onSubmit(){
+    this.getProfile(this.github_user);
+    this.github_user = '';
+  }
+
+  reset(){
+    this.profiles = '';
+    this.github_user = '';
+    
+  }
+
+  getProfile(username){
+    this.GithubService.getProfile(username).subscribe(response =>{
+      this.profiles = response;
+      console.log(this.profiles);
+    });
   }
 
 }
