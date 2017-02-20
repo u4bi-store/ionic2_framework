@@ -16,7 +16,7 @@ export class RepoDetailsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RepoDetailsPage');
+    console.log('RepoDetailsPage  페이지 로드');
   }
 
 }

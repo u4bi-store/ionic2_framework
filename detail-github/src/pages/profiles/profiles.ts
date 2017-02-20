@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { GithubService } from '../../providers/github-service';
+import { RepoDetailsPage } from '../repo-details/repo-details';
 
 /*
   Generated class for the Profiles page.
@@ -40,6 +41,12 @@ export class ProfilesPage {
 
   showRepos(github_user){
     this.getRepos(github_user);
+  }
+
+  repoTapped(event, repo){
+    this.navCtrl.push(RepoDetailsPage, {
+      repo: repo
+    });
   }
 
   getProfile(username){
