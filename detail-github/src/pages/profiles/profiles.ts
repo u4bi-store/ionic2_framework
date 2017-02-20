@@ -38,6 +38,10 @@ export class ProfilesPage {
     
   }
 
+  showRepos(github_user){
+    this.getRepos(github_user);
+  }
+
   getProfile(username){
     this.GithubService.getProfile(username).subscribe(response =>{
       this.profiles = response;
@@ -45,4 +49,10 @@ export class ProfilesPage {
     });
   }
 
+  getRepos(username){
+    this.GithubService.getRepos(username).subscribe(response =>{
+      this.repos = response;
+      console.log(this.repos);
+    });
+  }
 }
