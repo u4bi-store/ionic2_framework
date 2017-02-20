@@ -14,5 +14,27 @@
 
 
 <ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="cube"></ion-icon><strong>레포지토리 세부정보</strong>
+      <h1>{{selectedRepo.name}}</h1>
+      <h3>{{selectedRepo.owner.login}}</h3>
+    </ion-item>
+  </ion-card>
+  <hr />
+  <ion-card-content>
+    <p><strong>내용 : </strong>{{selectedRepo.description}}</p>
+    <p><strong>언어 : </strong>{{selectedRepo.language}}</p>
+    <p><strong>왓쳐 : </strong>{{selectedRepo.watchers_count}}</p>
+    <p><strong>스타 : </strong>{{selectedRepo.stargazers_count}}</p>
+    <p><strong>포크 : </strong>{{selectedRepo.forks_count}}</p>
+  </ion-card-content>
+  <hr />
+  <ion-card-content>
+    <a href="{{selectedRepo.html_url}}" ion-button icon-left>
+      <ion-icon name="git-network"></ion-icon>
+      <div> 링크 바로가기 </div>
+    </a>
+  </ion-card-content>
 
 </ion-content>
