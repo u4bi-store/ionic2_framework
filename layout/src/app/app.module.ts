@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { ActionSheets } from '../pages/action-sheets/action-sheets';
 import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
+import { Checkbox } from '../pages/checkbox/checkbox';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Button } from '../pages/button/button';
     HomePage,
     ActionSheets,
     Alert,
-    Button
+    Button,
+    Checkbox
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { Button } from '../pages/button/button';
     HomePage,
     ActionSheets,
     Alert,
-    Button
+    Button,
+    Checkbox
   ],
   providers: [
     StatusBar,

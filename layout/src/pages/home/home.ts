@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ActionSheets } from '../action-sheets/action-sheets';
 import { Alert } from '../alert/alert';
 import { Button } from '../button/button';
+import { Checkbox } from '../checkbox/checkbox';
 
 @Component({
   selector: 'page-home',
@@ -14,7 +15,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
       this.name = 'u4bi';
-        
+      
   }
 
   click(type){
@@ -27,6 +28,9 @@ export class HomePage {
           break;
       case 2 :
           this.navCtrl.push(Button);
+          break;
+      case 3 :
+          this.navCtrl.push(Checkbox);
           break;
       default : break;
     }
