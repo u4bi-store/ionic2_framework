@@ -2,23 +2,23 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the AlertController page.
+ * Generated class for the Alert page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-alert-controller',
-  templateUrl: 'alert-controller.html',
+  selector: 'page-alert',
+  templateUrl: 'alert.html',
 })
-export class AlertController {
+export class Alert {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlertController');
+    console.log('ionViewDidLoad Alert');
   }
 
 }

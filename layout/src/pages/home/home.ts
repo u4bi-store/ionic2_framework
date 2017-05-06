@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ActionSheets } from '../action-sheets/action-sheets';
-import { AlertController } from '../alert-controller/alert-controller';
+import { Alert } from '../alert/alert';
 
 @Component({
   selector: 'page-home',
@@ -22,7 +22,7 @@ export class HomePage {
           this.navCtrl.push(ActionSheets);
           break;
       case 1 :
-          this.navCtrl.push(AlertController);
+          this.navCtrl.push(Alert);
           break;
       default : break;
     }
