@@ -4,6 +4,7 @@ import { ActionSheets } from '../action-sheets/action-sheets';
 import { Alert } from '../alert/alert';
 import { Button } from '../button/button';
 import { Checkbox } from '../checkbox/checkbox';
+import { Chip } from '../chip/chip';
 
 @Component({
   selector: 'page-home',
@@ -31,6 +32,9 @@ export class HomePage {
           break;
       case 3 :
           this.navCtrl.push(Checkbox);
+          break;
+      case 4 :
+          this.navCtrl.push(Chip);
           break;
       default : break;
     }

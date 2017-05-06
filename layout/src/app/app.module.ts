@@ -10,6 +10,7 @@ import { ActionSheets } from '../pages/action-sheets/action-sheets';
 import { Alert } from '../pages/alert/alert';
 import { Button } from '../pages/button/button';
 import { Checkbox } from '../pages/checkbox/checkbox';
+import { Chip } from '../pages/chip/chip';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Checkbox } from '../pages/checkbox/checkbox';
     ActionSheets,
     Alert,
     Button,
-    Checkbox
+    Checkbox,
+    Chip
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { Checkbox } from '../pages/checkbox/checkbox';
     ActionSheets,
     Alert,
     Button,
-    Checkbox
+    Checkbox,
+    Chip
   ],
   providers: [
     StatusBar,
