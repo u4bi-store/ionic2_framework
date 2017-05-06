@@ -27,10 +27,33 @@ export class Alert {
       let alert = this.alertCtrl.create({
           title: '제목',
           subTitle: '부제목',
-          buttons: ['버튼 1번명', '버튼2번명']
+          buttons: ['확인']
       });
 
       alert.present();
+  }
+
+  basicConfirm(){
+    let alert = this.alertCtrl.create({
+      title : '제목',
+      message : '내용입니다',
+      buttons : [
+        {
+          text : '1번 버튼',
+          handler : () => {
+            console.log('1번 버튼 누름');
+          }
+        },
+        {
+          text : '2번 버튼',
+          handler : () => {
+            console.log('2번 버튼 누름');
+          }
+        }
+      ]
+    });
+
+    alert.present();
   }
 
 }
