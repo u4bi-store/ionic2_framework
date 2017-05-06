@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the Alert page.
@@ -14,11 +14,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Alert {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  private alertCtrl : AlertController) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Alert');
+  }
+
+  basicAlert() {
+      let alert = this.alertCtrl.create({
+          title: '제목',
+          subTitle: '부제목',
+          buttons: ['버튼 1번명', '버튼2번명']
+      });
+
+      alert.present();
   }
 
 }
