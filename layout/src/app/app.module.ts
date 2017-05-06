@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ActionSheets } from '../pages/action-sheets/action-sheets';
+import { AlertController } from '../pages/alert-controller/alert-controller';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ActionSheets
+    ActionSheets,
+    AlertController
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { ActionSheets } from '../pages/action-sheets/action-sheets';
   entryComponents: [
     MyApp,
     HomePage,
-    ActionSheets
+    ActionSheets,
+    AlertController
   ],
   providers: [
     StatusBar,
