@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ActionSheetController } from 'ionic-angular';
 
 /**
  * Generated class for the ActionSheets page.
@@ -14,16 +15,41 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ActionSheets {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public actionSheetCtrl : ActionSheetController){
+              }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActionSheets');
   }
 
-  back(){
-    this.navCtrl.pop();
-    
+  presentActionSheet() {
+      let actionSheet = this.actionSheetCtrl.create({
+        title: '액션 시트 타이틀',
+        buttons: [
+          {
+            text: '버튼 1번',
+            handler: () => {
+              console.log('버튼 1번');
+            }
+          },
+          {
+            text: '버튼 2번',
+            handler: () => {
+              console.log('버튼 2번');
+            }
+          },
+          {
+            text: '버튼 3번',
+            handler: () => {
+              console.log('버튼 3번');
+            }
+          }
+        ]
+      });
+      
+      actionSheet.present();
   }
 
 }
