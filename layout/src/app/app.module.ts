@@ -15,6 +15,7 @@ import { Badges } from '../pages/badges/badges';
 import { Card } from '../pages/card/card';
 import { Datetime } from '../pages/datetime/datetime';
 import { Fab } from '../pages/fab/fab';
+import { Gestures } from '../pages/gestures/gestures';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Fab } from '../pages/fab/fab';
     Badges,
     Card,
     Datetime,
-    Fab
+    Fab,
+    Gestures
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { Fab } from '../pages/fab/fab';
     Badges,
     Card,
     Datetime,
-    Fab
+    Fab,
+    Gestures
   ],
   providers: [
     StatusBar,

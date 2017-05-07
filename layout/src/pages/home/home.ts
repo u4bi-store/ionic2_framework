@@ -9,6 +9,7 @@ import { Badges } from '../badges/badges';
 import { Card } from '../card/card';
 import { Datetime } from '../datetime/datetime';
 import { Fab } from '../fab/fab';
+import { Gestures } from '../gestures/gestures';
 
 @Component({
   selector: 'page-home',
@@ -56,6 +57,10 @@ export class HomePage {
           {
               name : 'fab 액션 버튼',
               component: Fab
+          },
+          {
+              name : '제스쳐 스타일',
+              component: Gestures
           }
       ];
 
