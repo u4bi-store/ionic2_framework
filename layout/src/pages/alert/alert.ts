@@ -138,4 +138,55 @@ export class Alert {
     alert.present();
   }
 
+  basicCheckbox(){
+
+    let alert = this.alertCtrl.create({
+      title : '체크',
+      inputs : [
+        {
+          type : 'checkbox',
+          label : '1번',
+          value : '1'
+        },
+        {
+          type : 'checkbox',
+          label : '2번',
+          value : '2'
+        },
+        {
+          type : 'checkbox',
+          label : '3번',
+          value : '3'
+        },
+        {
+          type : 'checkbox',
+          label : '4번',
+          value : '4',
+          checked : true
+        },
+        {
+          type : 'checkbox',
+          label : '5번',
+          value : '5'
+        }
+      ],
+      buttons : [
+        {
+          text : '취소',
+          handler : data =>{
+            console.log('취소버튼 누름');
+          }
+        },
+        {
+          text : '확인',
+          handler : data =>{
+            console.log('확인 버튼 누름', data);
+          }
+        }
+      ]
+    });
+
+    alert.present();
+  }
+
 }
