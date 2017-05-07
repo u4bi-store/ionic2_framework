@@ -11,6 +11,7 @@ import { Datetime } from '../datetime/datetime';
 import { Fab } from '../fab/fab';
 import { Gestures } from '../gestures/gestures';
 import { Grid } from '../grid/grid';
+import { Icon } from '../icon/icon';
 
 @Component({
   selector: 'page-home',
@@ -66,6 +67,10 @@ export class HomePage {
           {
               name : '그리드 스타일',
               component: Grid
+          },
+          {
+              name : '아이콘 스타일',
+              component: Icon
           }
       ];
 
