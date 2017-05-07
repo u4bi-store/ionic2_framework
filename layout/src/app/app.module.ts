@@ -12,6 +12,7 @@ import { Button } from '../pages/button/button';
 import { Checkbox } from '../pages/checkbox/checkbox';
 import { Chip } from '../pages/chip/chip';
 import { Badges } from '../pages/badges/badges';
+import { Card } from '../pages/card/card';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Badges } from '../pages/badges/badges';
     Button,
     Checkbox,
     Chip,
-    Badges
+    Badges,
+    Card
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { Badges } from '../pages/badges/badges';
     Button,
     Checkbox,
     Chip,
-    Badges
+    Badges,
+    Card
   ],
   providers: [
     StatusBar,

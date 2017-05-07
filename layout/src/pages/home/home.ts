@@ -6,6 +6,7 @@ import { Button } from '../button/button';
 import { Checkbox } from '../checkbox/checkbox';
 import { Chip } from '../chip/chip';
 import { Badges } from '../badges/badges';
+import { Card } from '../card/card';
 
 @Component({
   selector: 'page-home',
@@ -41,7 +42,11 @@ export class HomePage {
           {
               name : '뱃지 스타일',
               component: Badges
-          } 
+          },
+          {
+              name : '카드 레이아웃',
+              component: Card
+          }
       ];
 
   }
