@@ -31,8 +31,10 @@
   </ion-list>
 
 
-  <ion-item-divider color="light"> Inset List</ion-item-divider>
+  <!--<ion-item-divider color="light"> Inset List</ion-item-divider>-->
   <ion-list inset>
+    <ion-list-header> Inset List </ion-list-header>
+
     <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
       {{ item.name }} {{ item.key }}
     </button> 
