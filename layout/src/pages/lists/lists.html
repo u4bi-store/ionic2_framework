@@ -27,4 +27,10 @@
     </button> 
   </ion-list>
 
+  <ion-list inset>
+    <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
+      {{ item.name }} {{ item.key }}
+    </button> 
+  </ion-list>
+
 </ion-content>
