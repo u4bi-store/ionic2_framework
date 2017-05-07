@@ -93,4 +93,49 @@ export class Alert {
     alert.present();
   }
 
+  basicRadio(){
+    let alert = this.alertCtrl.create({
+      title : '선택',
+      inputs : [
+        {
+          type : 'radio',
+          label : '1번',
+          value : '1'
+        },
+        {
+          type : 'radio',
+          label : '2번',
+          value : '2',
+          checked : true
+        },
+        {
+          type : 'radio',
+          label : '3번',
+          value : '3'
+        },
+        {
+          type : 'radio',
+          label : '4번',
+          value : '4'
+        }
+      ],
+      buttons : [
+        {
+          text : '취소',
+          handler : data =>{
+            console.log('취소버튼 누름');
+          }
+        },
+        {
+          text : '확인',
+          handler : data =>{
+            console.log('확인 버튼 누름', data);
+          }
+        }
+      ]
+    });
+
+    alert.present();
+  }
+
 }
