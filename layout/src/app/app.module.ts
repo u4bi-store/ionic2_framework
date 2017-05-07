@@ -18,6 +18,7 @@ import { Fab } from '../pages/fab/fab';
 import { Gestures } from '../pages/gestures/gestures';
 import { Grid } from '../pages/grid/grid';
 import { Icon } from '../pages/icon/icon';
+import { Inputs } from '../pages/inputs/inputs';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { Icon } from '../pages/icon/icon';
     Fab,
     Gestures,
     Grid,
-    Icon
+    Icon,
+    Inputs
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,8 @@ import { Icon } from '../pages/icon/icon';
     Fab,
     Gestures,
     Grid,
-    Icon
+    Icon,
+    Inputs
   ],
   providers: [
     StatusBar,

@@ -12,6 +12,7 @@ import { Fab } from '../fab/fab';
 import { Gestures } from '../gestures/gestures';
 import { Grid } from '../grid/grid';
 import { Icon } from '../icon/icon';
+import { Inputs } from '../inputs/inputs';
 
 @Component({
   selector: 'page-home',
@@ -71,6 +72,10 @@ export class HomePage {
           {
               name : '아이콘 스타일',
               component: Icon
+          },
+          {
+              name : '인풋 스타일',
+              component: Inputs
           }
       ];
 
