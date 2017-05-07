@@ -14,6 +14,7 @@ import { Grid } from '../grid/grid';
 import { Icon } from '../icon/icon';
 import { Inputs } from '../inputs/inputs';
 import { Lists } from '../lists/lists';
+import { Ranges } from '../range/range';
 
 @Component({
   selector: 'page-home',
@@ -81,6 +82,10 @@ export class HomePage {
           {
               name : '리스트 스타일',
               component: Lists
+          },
+          {
+              name : '범위레이아웃 스타일',
+              component: Ranges
           }
       ];
 
