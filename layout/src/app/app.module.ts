@@ -21,6 +21,7 @@ import { Icon } from '../pages/icon/icon';
 import { Inputs } from '../pages/inputs/inputs';
 import { Lists } from '../pages/lists/lists';
 import { Ranges } from '../pages/range/range';
+import { Searchbar } from '../pages/searchbar/searchbar';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { Ranges } from '../pages/range/range';
     Icon,
     Inputs,
     Lists,
-    Ranges
+    Ranges,
+    Searchbar
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ import { Ranges } from '../pages/range/range';
     Icon,
     Inputs,
     Lists,
-    Ranges
+    Ranges,
+    Searchbar
   ],
   providers: [
     StatusBar,

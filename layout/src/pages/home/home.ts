@@ -15,6 +15,7 @@ import { Icon } from '../icon/icon';
 import { Inputs } from '../inputs/inputs';
 import { Lists } from '../lists/lists';
 import { Ranges } from '../range/range';
+import { Searchbar } from '../searchbar/searchbar';
 
 @Component({
   selector: 'page-home',
@@ -86,6 +87,10 @@ export class HomePage {
           {
               name : '범위레이아웃 스타일',
               component: Ranges
+          },
+          {
+              name : '검색바 스타일',
+              component: Searchbar
           }
       ];
 
