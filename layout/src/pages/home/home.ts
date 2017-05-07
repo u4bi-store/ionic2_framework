@@ -13,6 +13,7 @@ import { Gestures } from '../gestures/gestures';
 import { Grid } from '../grid/grid';
 import { Icon } from '../icon/icon';
 import { Inputs } from '../inputs/inputs';
+import { Lists } from '../lists/lists';
 
 @Component({
   selector: 'page-home',
@@ -76,6 +77,10 @@ export class HomePage {
           {
               name : '인풋 스타일',
               component: Inputs
+          },
+          {
+              name : '리스트 스타일',
+              component: Lists
           }
       ];
 

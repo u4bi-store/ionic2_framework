@@ -19,6 +19,7 @@ import { Gestures } from '../pages/gestures/gestures';
 import { Grid } from '../pages/grid/grid';
 import { Icon } from '../pages/icon/icon';
 import { Inputs } from '../pages/inputs/inputs';
+import { Lists } from '../pages/lists/lists';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { Inputs } from '../pages/inputs/inputs';
     Gestures,
     Grid,
     Icon,
-    Inputs
+    Inputs,
+    Lists
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { Inputs } from '../pages/inputs/inputs';
     Gestures,
     Grid,
     Icon,
-    Inputs
+    Inputs,
+    Lists
   ],
   providers: [
     StatusBar,
