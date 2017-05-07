@@ -12,32 +12,35 @@ import { Chip } from '../chip/chip';
 })
 export class HomePage {
   
-  name : string;
+  items : any;
 
   constructor(public navCtrl: NavController) {
-      this.name = 'u4bi';
-      
+
+      this.items = [
+          {
+              name : '액션시트',
+              component : ActionSheets
+          },
+          {
+              name : '경고팝업',
+              component : Alert
+          },
+          {
+              name : '버튼 스타일',
+              component : Button
+          },
+          {
+              name : '체크박스 스타일',
+              component : Checkbox
+          },
+          {
+              name : '칩 스타일',
+              component : Chip
+          }
+      ];
+
   }
 
-  click(type){
-    switch(type){
-      case 0 :
-          this.navCtrl.push(ActionSheets);
-          break;
-      case 1 :
-          this.navCtrl.push(Alert);
-          break;
-      case 2 :
-          this.navCtrl.push(Button);
-          break;
-      case 3 :
-          this.navCtrl.push(Checkbox);
-          break;
-      case 4 :
-          this.navCtrl.push(Chip);
-          break;
-      default : break;
-    }
-  }
+  click = (type) => this.navCtrl.push(type);
 
 }
