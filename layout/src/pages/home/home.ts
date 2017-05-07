@@ -5,6 +5,7 @@ import { Alert } from '../alert/alert';
 import { Button } from '../button/button';
 import { Checkbox } from '../checkbox/checkbox';
 import { Chip } from '../chip/chip';
+import { Badges } from '../badges/badges';
 
 @Component({
   selector: 'page-home',
@@ -36,7 +37,11 @@ export class HomePage {
           {
               name : '칩 스타일',
               component : Chip
-          }
+          },
+          {
+              name : '뱃지 스타일',
+              component: Badges
+          } 
       ];
 
   }
