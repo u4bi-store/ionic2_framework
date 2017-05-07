@@ -16,6 +16,7 @@ import { Card } from '../pages/card/card';
 import { Datetime } from '../pages/datetime/datetime';
 import { Fab } from '../pages/fab/fab';
 import { Gestures } from '../pages/gestures/gestures';
+import { Grid } from '../pages/grid/grid';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Gestures } from '../pages/gestures/gestures';
     Card,
     Datetime,
     Fab,
-    Gestures
+    Gestures,
+    Grid
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { Gestures } from '../pages/gestures/gestures';
     Card,
     Datetime,
     Fab,
-    Gestures
+    Gestures,
+    Grid
   ],
   providers: [
     StatusBar,

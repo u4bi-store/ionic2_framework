@@ -10,6 +10,7 @@ import { Card } from '../card/card';
 import { Datetime } from '../datetime/datetime';
 import { Fab } from '../fab/fab';
 import { Gestures } from '../gestures/gestures';
+import { Grid } from '../grid/grid';
 
 @Component({
   selector: 'page-home',
@@ -61,6 +62,10 @@ export class HomePage {
           {
               name : '제스쳐 스타일',
               component: Gestures
+          },
+          {
+              name : '그리드 스타일',
+              component: Grid
           }
       ];
 
