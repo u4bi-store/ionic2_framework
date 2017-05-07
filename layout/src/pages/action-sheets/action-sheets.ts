@@ -29,6 +29,7 @@ export class ActionSheets {
         buttons: [
           {
             text: '버튼 1번',
+            role: 'destructive',
             handler: () => {
               console.log('버튼 1번');
             }
@@ -41,6 +42,7 @@ export class ActionSheets {
           },
           {
             text: '버튼 3번',
+            role: 'cancel',
             handler: () => {
               console.log('버튼 3번');
             }
