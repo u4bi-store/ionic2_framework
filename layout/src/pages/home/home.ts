@@ -7,6 +7,7 @@ import { Checkbox } from '../checkbox/checkbox';
 import { Chip } from '../chip/chip';
 import { Badges } from '../badges/badges';
 import { Card } from '../card/card';
+import { Datetime } from '../datetime/datetime';
 
 @Component({
   selector: 'page-home',
@@ -46,6 +47,10 @@ export class HomePage {
           {
               name : '카드 레이아웃',
               component: Card
+          },
+          {
+              name : '데이트타임 포멧',
+              component: Datetime
           }
       ];
 
