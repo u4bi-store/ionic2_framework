@@ -8,6 +8,7 @@ import { Chip } from '../chip/chip';
 import { Badges } from '../badges/badges';
 import { Card } from '../card/card';
 import { Datetime } from '../datetime/datetime';
+import { Fab } from '../fab/fab';
 
 @Component({
   selector: 'page-home',
@@ -51,6 +52,10 @@ export class HomePage {
           {
               name : '데이트타임 포멧',
               component: Datetime
+          },
+          {
+              name : 'fab 액션 버튼',
+              component: Fab
           }
       ];
 

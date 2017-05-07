@@ -14,6 +14,7 @@ import { Chip } from '../pages/chip/chip';
 import { Badges } from '../pages/badges/badges';
 import { Card } from '../pages/card/card';
 import { Datetime } from '../pages/datetime/datetime';
+import { Fab } from '../pages/fab/fab';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Datetime } from '../pages/datetime/datetime';
     Chip,
     Badges,
     Card,
-    Datetime
+    Datetime,
+    Fab
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { Datetime } from '../pages/datetime/datetime';
     Chip,
     Badges,
     Card,
-    Datetime
+    Datetime,
+    Fab
   ],
   providers: [
     StatusBar,
