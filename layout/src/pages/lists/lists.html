@@ -15,18 +15,23 @@
 
 <ion-content padding>
 
+
+  <ion-item-divider color="light"> Basic List</ion-item-divider>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
       {{ item.name }} {{ item.key }}
     </button>  
   </ion-list>
-
+  
+  <ion-item-divider color="light"> No line List</ion-item-divider>
   <ion-list no-lines>
     <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
       {{ item.name }} {{ item.key }}
     </button> 
   </ion-list>
 
+
+  <ion-item-divider color="light"> Inset List</ion-item-divider>
   <ion-list inset>
     <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
       {{ item.name }} {{ item.key }}
