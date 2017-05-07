@@ -40,4 +40,48 @@
     </button> 
   </ion-list>
 
+  <!-- sliding list -->
+  <ion-list>
+
+    <ion-item-sliding> <!-- 슬라이딩 옵션 지정 태그 -->
+
+        <!-- 아이템 -->
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="https://avatars1.githubusercontent.com/u/21367010?v=3&s=460">
+          </ion-avatar>
+          
+          <h2>u4bi</h2>
+
+        </ion-item>
+
+        <!-- 좌측 스와이프 -->
+        <ion-item-options side="left">
+
+            <button ion-button color="primary">   <!-- 아이템 1 -->
+              <ion-icon name="text"></ion-icon>
+              문자
+            </button>
+
+            <button ion-button color="secondary"> <!-- 아이템 2 -->
+              <ion-icon name="call"></ion-icon>
+              전화
+            </button>
+
+        </ion-item-options>
+
+        <!-- 우측 스와이프 -->
+        <ion-item-options side="right">
+
+          <button ion-button color="primary">     <!-- 아이템 1 -->
+            <ion-icon name="mail"></ion-icon>
+            메일
+          </button>
+
+        </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
 </ion-content>
