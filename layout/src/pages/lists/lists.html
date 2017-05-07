@@ -14,10 +14,17 @@
 
 
 <ion-content padding>
+
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
       {{ item.name }} {{ item.key }}
     </button>  
+  </ion-list>
+
+  <ion-list no-lines>
+    <button ion-item *ngFor="let item of items" (click)="itemClick(item)">
+      {{ item.name }} {{ item.key }}
+    </button> 
   </ion-list>
 
 </ion-content>
